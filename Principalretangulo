@@ -1,0 +1,38 @@
+package triangulo;
+
+import java.util.Scanner;
+
+public class Principalretangulo {
+
+	public static void main(String[] args) 
+		{
+
+			Scanner entrada  = new Scanner(System.in);
+
+			Retangulo r = new Retangulo();
+
+			System.out.println("Informe a widht : ");
+			r.widht = entrada.nextDouble();
+
+			System.out.println("Informe a heigh : ");
+			r.height = entrada.nextDouble();
+
+			// area
+			double area = r.area();
+			System.out.println("A area do Retangulo : "
+			                   + area );
+			// perimetro
+			double perimetro = r.perimeter();
+			System.out.println("O perimetro é : "
+			                   + perimetro);
+
+			// diagonal
+			double diagonal = r.diagnal();
+			System.out.println("A diagonal : "
+			                   + diagonal );
+
+			entrada.close();
+	
+	}
+
+}

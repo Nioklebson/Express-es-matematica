@@ -1,0 +1,21 @@
+package retangulo;
+
+public class Retangulo {
+	double widht;
+	double height;
+
+	public double area() {
+	double valor = (this.widht * this.height);
+	//return (this.widht * this.height);
+	return valor;
+	}
+
+	public double perimeter() {
+	return 2 * (this.height + this.widht);
+	}
+
+	public double diagnal() {
+	return Math.sqrt((this.height * this.height)
+	        + (this.widht * this.widht));
+    }
+}

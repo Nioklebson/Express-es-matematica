@@ -1,0 +1,17 @@
+package exercicios7;
+
+
+public class Exercicios7 {
+
+	public static void main(String[] args) {
+int numero = 3;
+		
+		if (numero % 2==0 ) {
+			System.out.println("é um numero par= "+numero);
+			 } else {
+			System.out.println(" é um numero impar= "+numero);
+			}
+
+	}
+	  
+}

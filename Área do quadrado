@@ -1,0 +1,14 @@
+package exercicio3;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		int a = 895;
+		int b = 85;
+		int c = b * a ;
+		
+		System.out.println("Área do quadrado : "+c);
+				
+	}
+
+}

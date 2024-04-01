@@ -1,0 +1,14 @@
+package exercicio4;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		
+		int a = 47;
+		int b = 22;
+		int c = b * a /2;
+		System.out.println("Área do triangulo: "+c);
+
+	}
+
+}

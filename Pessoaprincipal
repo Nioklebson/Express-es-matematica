@@ -1,0 +1,36 @@
+package pessoa;
+
+import java.util.Scanner;
+
+public class Principalpessoa {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		Pessoa p = new Pessoa();
+		
+		System.out.println("Informe Seu Nome :");
+        p.nome= entrada.next();
+        
+        System.out.println("informe seu Sobrenome :");
+        p.sobreNome= entrada.next();
+        
+        System.out.println("informe Ano de Nasc :");
+        p.anoNascimento = entrada.nextInt();
+        
+        String nomeCompleto = p.juntaNome();
+        System.out.println("Nome de Usuario : " + nomeCompleto);
+        
+        p.informaIdade();
+      
+        
+    
+        entrada.close();
+        
+        
+        
+        
+        
+        entrada.close();
+	}
+
+}

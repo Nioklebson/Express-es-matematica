@@ -1,0 +1,34 @@
+package aula01;
+
+import java.util.Scanner;
+
+public class Pessoa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o dia de nascimento:");
+        int diaNascimento = scanner.nextInt();
+
+        System.out.println("Digite o mês de nascimento:");
+        int mesNascimento = scanner.nextInt();
+
+        System.out.println("Digite o ano de nascimento:");
+        int anoNascimento = scanner.nextInt();
+
+        System.out.println("A idade é: " + calcularIdade(diaNascimento, mesNascimento, anoNascimento) + " anos.");
+
+        scanner.close();
+    }
+
+    public static int calcularIdade(int diaNascimento, int mesNascimento, int anoNascimento) {
+        int diasAtual = 8; 
+        int mesesAtual = 4;
+        int anosAtual = 2024;
+
+        int diasIdade = (anosAtual - anoNascimento) * 365 + (mesesAtual - mesNascimento) * 30 + (diasAtual - diaNascimento);
+        int anosIdade = diasIdade / 365;
+        
+        return anosIdade;
+    }
+
+}

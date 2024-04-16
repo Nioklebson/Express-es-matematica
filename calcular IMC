@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class CalculoIMC {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o peso em kg
+        System.out.println("Digite o peso em kg: ");
+        double peso = scanner.nextDouble();
+
+        // Solicita a altura em metros
+        System.out.println("Digite a altura em metros (ex: 1.75): ");
+        double altura = scanner.nextDouble();
+
+        // Calcula o IMC
+        double imc = peso / (altura * altura);
+
+        // Determina a condição de acordo com o IMC
+        String condicao;
+        if (imc < 18.5) {
+            condicao = "Abaixo do peso";
+        } else if (imc >= 18.5 && imc < 25) {
+            condicao = "Peso normal";
+        } else if (imc >= 25 && imc < 30) {
+            condicao = "Acima do peso";
+        } else {
+            condicao = "Obeso";
+        }
+
+        // Exibe a condição de peso
+        System.out.println("Condição de peso: " + condicao);
+
+        scanner.close();
+    }
+}

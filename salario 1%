@@ -1,0 +1,13 @@
+public class SalarioArtista {
+    public static void main(String[] args) {
+        // Salário mensal do artista (sem reajuste)
+        double salarioSemReajuste = 2000000.0; // 2 milhões de dólares
+
+        // Salário mensal com reajuste de 1%
+        double salarioComReajuste = salarioSemReajuste * 1.01;
+
+        // Exibindo os resultados
+        System.out.println("Salário mensal sem reajuste: $" + salarioSemReajuste);
+        System.out.println("Salário mensal com reajuste de 1%: $" + salarioComReajuste);
+    }
+}

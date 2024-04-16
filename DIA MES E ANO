@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class CalculoIdade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada da data de nascimento
+        System.out.println("Data de nascimento (dd/mm/aaaa): ");
+        int diaNascimento = scanner.nextInt();
+        int mesNascimento = scanner.nextInt();
+        int anoNascimento = scanner.nextInt();
+
+        // Entrada da data atual
+        System.out.println("Data de hoje (dd/mm/aaaa): ");
+        int diaAtual = scanner.nextInt();
+        int mesAtual = scanner.nextInt();
+        int anoAtual = scanner.nextInt();
+
+        // Calculando a idade
+        int idade = anoAtual - anoNascimento;
+
+        // Verificando se ainda não fez aniversário este ano
+        if (mesAtual < mesNascimento || (mesAtual == mesNascimento && diaAtual < diaNascimento)) {
+            idade--;
+        }
+
+        // Exibindo a idade
+        System.out.println("Idade: " + idade);
+
+        scanner.close();
+    }
+}

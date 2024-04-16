@@ -1,0 +1,27 @@
+public class MediaDasMedias {
+    public static void main(String[] args) {
+        // Definição dos três números quaisquer
+        int numero1 = 100;  // Exemplo, você pode alterar esses valores se desejar
+        int numero2 = 150;
+        int numero3 = 50;
+
+        // Calculando a média aritmética dos três números
+        double media1 = (numero1 + numero2 + numero3) / 3.0;
+
+        // Definição de outros três números quaisquer
+        int numero4 = 75;   // Exemplo, você pode alterar esses valores se desejar
+        int numero5 = 125;
+        int numero6 = 175;
+
+        // Calculando a média aritmética dos outros três números
+        double media2 = (numero4 + numero5 + numero6) / 3.0;
+
+        // Calculando a média das médias
+        double mediaDasMedias = (media1 + media2) / 2.0;
+
+        // Exibindo os resultados
+        System.out.println("Média dos três primeiros números: " + media1);
+        System.out.println("Média dos três segundos números: " + media2);
+        System.out.println("Média das médias: " + mediaDasMedias);
+    }
+}
